@@ -1,0 +1,6 @@
+[submodule "gatling"]
+	path = gatling
+	url = git@github.com:negokaz/gatling.git
+[submodule "gatling-highcharts"]
+	path = gatling-highcharts
+	url = git@github.com:negokaz/gatling-highcharts.git
