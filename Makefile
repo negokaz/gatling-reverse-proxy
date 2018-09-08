@@ -6,8 +6,8 @@ publish: build_gatling build_gatling-highcharts
 	mv $(CURDIR)/gatling-highcharts/gatling-charts-highcharts-bundle/target/universal/*.zip $(CURDIR)/
 
 deploy:
-	scp ./$(MODULE_NAME).zip $(SSH_HOST):/tmp/
-	ssh $(SSH_HOST) unzip /tmp/$(MODULE_NAME).zip -d /tmp
+	scp ./$(MODULE_NAME).zip $(SSH_HOST):~/
+	ssh $(SSH_HOST) 'unzip ~/$(MODULE_NAME).zip -d ~/'
 
 build_gatling:
 	cd $(CURDIR)/gatling; \
